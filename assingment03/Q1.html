@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Assignment 03 - Flex Rows Layout</title>
+  <style>
+    :root{
+      --gap: 14px;
+    }
+    *{box-sizing:border-box;}
+    body{
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: #fafafa;
+      margin: 18px;
+      color: #222;
+    }
+    .sheet{
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 4px solid #ccc;
+      background: #fff;
+    }
+    h1{
+      margin: 0 0 8px 0;
+      font-size: 20px;
+      text-align: center;
+    }
+    .task{
+      margin: 6px 0 20px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .rows{
+      display: block;
+      gap: 12px;
+    }
+    .row{
+      display: flex;
+      align-items: center;
+      margin: 10px 6px;
+    }
+    .label{
+      width: 80px;
+      font-size: 13px;
+      padding-right: 8px;
+      text-align: left;
+      color: #333;
+    }
+    .bar{
+      flex: 1 1 auto;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: transparent;
+      padding: 0 6px;
+      border-radius: 2px;
+    }
+    .bar.small { height: 20px; }
+    .segment{
+      height: 100%;
+      border-radius: 2px;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.03) inset;
+      flex: 0 0 auto;
+    }
+    .red{ background:#d9534f; }
+    .blue{ background:#337ab7; }
+    .darkgreen{ background:#0b6623; }
+    .green{ background:#2f8f3f; }
+    .gold{ background:#e0ab2f; }
+    .rows .row + .row { margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    
+    
+    <section class="rows">
+
+      <div class="row">
+        <div class="label">Row 1</div>
+        <div class="bar">
+          <div class="segment red" style="width:65%"></div>
+          <div class="segment blue" style="width:32%"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">Row 2</div>
+        <div class="bar">
+          <div class="segment darkgreen" style="width:92%"></div>
+          <div class="segment blue" style="width:6%"></div>
+        </div>
+      </div>
+
+      
+
+      <div class="row">
+        <div class="label">Row 3</div>
+        <div class="bar">
+          <div class="segment red" style="width:15%"></div>
+          <div class="segment darkgreen" style="width:80%"></div>
+          <div class="segment blue" style="width:5%"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">Row 4</div>
+        <div class="bar">
+          <div class="segment red" style="width:89%"></div>
+          <div class="segment blue" style="width:9%"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">Row 5</div>
+        <div class="bar">
+          <div class="segment darkgreen" style="width:100%"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">Row 6</div>
+        <div class="bar">
+          <div class="segment red" style="width:100%"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">Row 7</div>
+        <div class="bar">
+          <div class="segment red" style="width:6%"></div>
+          <div class="segment blue" style="width:92%"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">Row 8</div>
+        <div class="bar">
+          <div class="segment darkgreen" style="width:23%"></div>
+          <div class="segment gold" style="width:6%"></div>
+          <div class="segment darkgreen" style="width:23%"></div>
+          <div class="segment gold" style="width:6%"></div>
+          <div class="segment darkgreen" style="width:23%"></div>
+          <div class="segment gold" style="width:6%"></div>
+          <div class="segment darkgreen" style="width:9%"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="label">Row 9</div>
+        <div class="bar">
+          <div class="segment gold" style="width:12%"></div>
+          <div class="segment green" style="width:6%"></div>
+          <div class="segment gold" style="width:36%"></div>
+          <div class="segment green" style="width:6%"></div>
+          <div class="segment gold" style="width:40%"></div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>

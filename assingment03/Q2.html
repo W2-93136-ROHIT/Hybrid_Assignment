@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 03 - Q2</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #1a237e;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    header nav ul li {
+      display: inline;
+    }
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+ 
+    #new {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+    .box {
+      background: #2196f3;
+      color: white;
+      flex: 1;
+      margin: 0 10px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .box h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .box p {
+      margin: 5px 0 0;
+    }
+
+    #about {
+      display: flex;
+      align-items: flex-start;
+      margin: 40px 0;
+      border-top: 2px solid #1a237e;
+      padding-top: 20px;
+    }
+    #about img {
+      width: 250px;
+      margin-right: 20px;
+      border-radius: 4px;
+    }
+    #about p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    #courses {
+      margin: 10px 5px;
+      border-top: 2px solid #1a237e;
+      padding-top: 20px;
+    }
+    .course-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .course {
+      flex: 1 1 150px;
+      background: #ff7043;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+   
+    #contact {
+      margin: 40px 0;
+      border-top: 2px solid #1a237e;
+      padding-top: 20px;
+    }
+    .contact-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .contact-box {
+      flex: 1 1 200px;
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .contact-box h4 {
+      margin-top: 0;
+    }
+
+    
+    footer {
+      background: #2196f3;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sunbeam Institute of Information Technology</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+
+   
+    <section id="new">
+      <div class="box">
+        <h2>25+</h2>
+        <p>Years of Excellence</p>
+      </div>
+      <div class="box">
+        <h2>50000+</h2>
+        <p>Students Trained</p>
+      </div>
+      <div class="box">
+        <h2>125+</h2>
+        <p>Recruiters</p>
+      </div>
+    </section>
+
+    
+    <section id="about">
+      <img src="https://www.sunbeaminfo.in/uploads/product_photo/20190820062721_69109726_2368861736542458_7200019880081358848_o.jpg" alt="Institute">
+      <div>
+        <h2>About Sunbeam Institute</h2>
+        <p>
+          Sunbeam is a leading training institute that has been shaping careers for decades. 
+          With a focus on quality education, industry-relevant curriculum, and expert faculty, 
+          Sunbeam has helped thousands of students secure rewarding jobs in top companies.  
+          Our commitment to excellence and continuous innovation ensures that students are prepared 
+          to meet the demands of a dynamic IT industry.
+        </p>
+      </div>
+    </section>
+
+    
+    <section id="courses">
+      <h2>Course Section</h2>
+      <div class="course-list">
+        <div class="course">PG-DAC</div>
+        <div class="course">PG-DBDA</div>
+        <div class="course">PG-DAI</div>
+        <div class="course">PG-UIUX</div>
+      </div>
+    </section>
+
+   
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-box">
+          <h4>Head Office</h4>
+          <p>Sunbeam Infotech, Pune<br>
+          Phone: +91 12345 67890<br>
+          Email: info@sunbeam.com</p>
+        </div>
+        <div class="contact-box">
+          <h4>Branch Office</h4>
+          <p>Sunbeam Karad<br>
+          Phone: +91 98765 43210<br>
+          Email: karad@sunbeam.com</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sunbeam. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
